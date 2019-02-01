@@ -36,6 +36,8 @@ $ git checkout -b (機能の名前)
 例: $ git checkout -b modify_image_func
 ~~~
 5. ソースコードの修正（機能の追加）
+
+
 6. ブランチに追加（インデックスにステージ）
 ~~~
 // ファイルを指定してブランチに追加
@@ -50,10 +52,21 @@ $ git add .
 $ git commit -m "ここに修正内容を書く"
 例: $ git commit -m "[fix] 強制終了するバグを修正"
 ~~~
-8. 5~7を繰り返す
-9. 自分の変更をリモートホスト（GitHubにあがっているもの）へ反映
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+参考: [Gitのコミットメッセージの書き方](https://qiita.com/itosho/items/9565c6ad2ffc24c09364)
+
+
+8. 自分が編集するソースコードの変更が終了するまで5~7を繰り返す
+
+
+9. 8の作業が終わったら、自分の変更をリモートホスト（GitHubにあがっているもの）へ反映
 ~~~
 $ git push origin ここにブランチ名
 例: $ git push origin modify_image_func
 ~~~
-10. GitHubのリポジトリのサイトからPull Requestを作成
+10. GitHubのリポジトリのサイトからPull Requestを作成(自分で作成したブランチからmasterへ)
+
+
+11. メンバーからコードレビューをしてもらい、OKが出たらマージする。
+
+12. 2に戻る（masterに新しい変更があるのでプルする）
