@@ -64,4 +64,9 @@ $ git commit -m "ここに修正内容を書く"
 $ git push origin ここにブランチ名
 例: $ git push origin modify_image_func
 ~~~
-10. GitHubのリポジトリのサイトからPull Requestを作成
+10. GitHubのリポジトリのサイトからPull Requestを作成(自分で作成したブランチからmasterへ)
+
+
+11. メンバーからコードレビューをしてもらい、OKが出たらマージする。
+
+12. 2に戻る（masterに新しい変更があるのでプルする）
